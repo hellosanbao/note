@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>-webkit-felx盒模型</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src="js/jquery-1.10.min.js"></script>
+</head>
+<body>
+	<div class="warp">
+		<h3 class='warp-til'>-webkit-felx盒模型</h3>
+
+		<p class="item-til">[flex] /*父容器*/</p>
+		<div class="items clearfix">
+			<div class="item fl">
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-1">
+					<div class="flex flex1">width:150px;</div>
+					<div class="flex flex2">flex1</div>
+					<div class="flex flex3">flex2</div>
+				</div>
+			</div>
+			<div class="item fl">
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-2">
+					<div class="flex flex1">width:150px; <br/>margin-right:10px;</div>
+					<div class="flex flex2">flex1</div>
+					<div class="flex flex3">width:150px;<br/>margin-left:10px;</div>
+				</div>
+			</div>
+		</div>
+
+		<p class="item-til">[flex-direction] /*父容器*/</p>
+		<div class="items clearfix">
+			<div class="item fl">
+				<p>flex-direction:row;/*default*/</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-3">
+					<div class="flex flex1">flex1</div>
+					<div class="flex flex2">flex2</div>
+					<div class="flex flex3">flex3</div>
+				</div>
+			</div>
+			<div class="item fl">
+				<p>flex-direction:row-reveres;</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-4">
+					<div class="flex flex1">flex1</div>
+					<div class="flex flex2">flex2</div>
+					<div class="flex flex3">flex3</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="items clearfix">
+			<div class="item fl">
+				<p>flex-direction:column;/*default*/</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-5">
+					<div class="flex flex1">flex1</div>
+					<div class="flex flex2">flex2</div>
+					<div class="flex flex3">flex3</div>
+				</div>
+			</div>
+			<div class="item fl">
+				<p>flex-direction:column-reverse;</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-6">
+					<div class="flex flex1">flex1</div>
+					<div class="flex flex2">flex2</div>
+					<div class="flex flex3">flex3</div>
+				</div>
+			</div>
+		</div>
+		<p class="item-til">[-webkit-flex-wrap] /*父容器*/</p>
+		<div class="items clearfix">
+			<div class="item fl">
+				<p>-webkit-flex-wrap:nowrap; /*default*/</p>
+				<p>width:500px;</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-7">
+					<div class="flex flex1">width:100px;</div>
+					<div class="flex flex2">width:200px;</div>
+					<div class="flex flex3">width:300px;</div>
+				</div>
+			</div>
+			<div class="item fl">
+				<p>-webkit-flex-wrap:wrap;</p>
+				<p>width:500px;</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-8">
+					<div class="flex flex1">width:100px;</div>
+					<div class="flex flex2">width:200px;</div>
+					<div class="flex flex3">width:300px;</div>
+				</div>
+			</div>
+			<div class="item fl">
+				<p>webkit-flex-wrap:wrap-reverse;</p>
+				<p>width:500px;</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-9">
+					<div class="flex flex1">width:100px;</div>
+					<div class="flex flex2">width:200px;</div>
+					<div class="flex flex3">width:300px;</div>
+				</div>
+			</div>
+		</div>
+		<p class="item-til">[flex-flow]:flex-direction和flex-wrap的混合值（效果见上面的例子） /*父容器*/</p>
+		<hr>
+		<p class="item-til">[justify-content] /*父容器*/</p>
+		<div class="items clearfix">
+			<div class="item fl">
+				<p>-webkit-flex-wrap:nowrap; /*default*/</p>
+				<p>width:500px;</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-10">
+					<div class="flex flex1">width:100px;</div>
+					<div class="flex flex2">width:100px;</div>
+				</div>
+			</div>
+			<div class="item fl">
+				<p>-webkit-flex-wrap:wrap;</p>
+				<p>width:500px;</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-11">
+					<div class="flex flex1">width:100px;</div>
+					<div class="flex flex2">width:100px;</div>
+				</div>
+			</div>
+			<div class="item fl">
+				<p>webkit-flex-wrap:wrap-reverse;</p>
+				<p>width:500px;</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-12">
+					<div class="flex flex1">width:100px;</div>
+					<div class="flex flex2">width:100px;</div>
+				</div>
+			</div>
+		</div>
+		<div class="items clearfix">
+			<div class="item fl">
+				<p>-webkit-flex-wrap:nowrap; /*default*/</p>
+				<p>width:500px;</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-13">
+					<div class="flex flex1">width:100px;</div>
+					<div class="flex flex2">width:100px;</div>
+				</div>
+			</div>
+			<div class="item fl">
+				<p>-webkit-flex-wrap:wrap;</p>
+				<p>width:500px;</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-14">
+					<div class="flex flex1">width:100px;</div>
+					<div class="flex flex2">width:100px;</div>
+				</div>
+			</div>
+		</div>
+		<p class="item-til">[align-self] /*子元素*/</p>
+		<div class="items clearfix">
+			<div class="item fl w90bf">
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-15">
+					<div class="flex flex1">align-self:flex-start;</div>
+					<div class="flex flex2">align-self:flex-end;</div>
+					<div class="flex flex3">align-self:flex-center;</div>
+					<div class="flex flex4">align-self:auto; <br> /*default*/</div>
+					<div class="flex flex5">align-self:baseline;</div>
+					<div class="flex flex6">align-self:stretch;</div>
+				</div>
+			</div>
+		</div>
+
+		<p class="item-til">[align-items] /*父容器*/</p>
+		<div class="items clearfix">
+			<div class="item fl h200">
+				<p>align-items:flex-start</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-16">
+					<div class="flex flex1">width:100px;</div>
+					<div class="flex flex2">width:100px;</div>
+				</div>
+			</div>
+			<div class="item fl h200">
+				<p>align-items:flex-end</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-17">
+					<div class="flex flex1">width:100px;</div>
+					<div class="flex flex2">width:100px;</div>
+				</div>
+			</div>
+			<div class="item fl h200">
+				<p>align-items:center</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-18">
+					<div class="flex flex1">width:100px;</div>
+					<div class="flex flex2">width:100px;</div>
+				</div>
+			</div>
+		</div>
+		<div class="items clearfix">
+			<div class="item fl h200">
+				<p>align-items:auto</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-19">
+					<div class="flex flex1">width:100px;</div>
+					<div class="flex flex2">width:100px;</div>
+				</div>
+			</div>
+			<div class="item fl h200">
+				<p>align-items:baseline</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-20">
+					<div class="flex flex1">width:100px;</div>
+					<div class="flex flex2">width:100px;</div>
+				</div>
+			</div>
+			<div class="item fl h200">
+				<p>align-items:stretch</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-21">
+					<div class="flex flex1">height:100px;</div>
+					<div class="flex flex2">width:100px;</div>
+				</div>
+			</div>
+		</div>
+
+		<p class="item-til">[align-content] /*父容器*/</p>
+		<div class="items clearfix content">
+			<div class="item fl h200">
+				<p>align-content:flex-start</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-22">
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+				</div>
+			</div>
+			<div class="item fl h200">
+				<p>align-content:flex-end</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-23">
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+				</div>
+			</div>
+			<div class="item fl h200">
+				<p>align-content:center</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-24">
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+				</div>
+			</div>
+		</div>
+		<div class="items clearfix content">
+			<div class="item fl h200">
+				<p>align-content:space-between</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-25">
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+				</div>
+			</div>
+			<div class="item fl h200">
+				<p>align-content:cpace-around</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-26">
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+				</div>
+			</div>
+			<div class="item fl h200">
+				<p>align-content:stretch /*default*/</p>
+				<p>display:-webkit-flex;</p>
+				<div class="flex-box flex-box-27">
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+					<div class="flex flex1">1</div>
+					<div class="flex flex2">1</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div><!-- warp -->
+	
+
+
+</body>
+</html>

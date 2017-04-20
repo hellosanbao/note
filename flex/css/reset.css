@@ -1,0 +1,52 @@
+@charset "utf-8";
+/*----------- 重置样式 ----------------*/
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{font-weight:normal;}
+html,body,fieldset,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style: normal;}
+[hidefocus],summary{outline:0;}
+ul , ol , ul li , li , ol li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font-family:"Microsoft YaHei","微软雅黑",\5fae\8f6f\96c5\9ed1,arial,\5b8b\4f53; font-size:12px;color:#000 ;outline:0;}
+body{background:#fff;color:#000;}
+a{color:#000; border: none; text-decoration: none;outline:none; /*移除虚线框  IE8,FF有用*/ hide-focus: expression(this.hideFocus=true); /*IE6、IE7*/}
+a:focus{outline: 0;-moz-outline-style: none;}
+a:hover{text-decoration: none;}
+img{overflow: hidden;border: 0 none;}
+button,input,select,textarea{font-size:100%;font-family:tahoma;margin: 0;outline: 0 none;vertical-align: baseline;_overflow:visible;*vertical-align: middle;*overflow:visible;}
+
+/* ================ 全局function ============ */
+.fl{float: left !important;}
+.fr{float: right !important;}
+.f_ib{display:inline-block;*display:inline;*zoom:1;}
+.f_oh{overflow:hidden;zoom:1;}/* 清除浮动*/
+.clearfix:after{clear:both;display:block;height:0;font-size:0;content:".";visibility:hidden;}
+/*font function*/
+.f_ffa{font-family:'SimSun';}/*标记宋体*/
+.f_ffy{font-family:"Microsoft YaHei",\5fae\8f6f\96c5\9ed1,arial,\5b8b\4f53;}/*标记微软雅黑字体*/
+.of_hide{overflow: hidden;}
+.tx_c{text-align: center!important;}
+.cl{clear: both;}
+.pr{position: relative;}
+.pa{position: absolute;}
+.dp_block{display: block!important;}
+.dpi{display: inline-block;}
+.bor_n{border:none !important;}
+.cl{clear: both;}
+.tx_r{text-align: right;}
+.fwb{font-weight:blod;}
+.center{margin-left:auto;margin-right: auto;}
+.vm{vertical-align: middle;}
+.img-box-x img{width: 100%;vertical-align: middle;display: block;}
+.img-box img{width: 100%;height: 100%;vertical-align: middle;display: block;}
+
